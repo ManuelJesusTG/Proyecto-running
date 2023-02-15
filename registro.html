@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    
+</head>
+<body>
+    
+<div class="col-12">
+
+      <header class="col-12" id="header">
+
+            <img src="img/Logo.svg" id="logo" class="d-flex justify-content-start"/>
+            <h1 id="Titulo" class="d-flex justify-content-center">CORREDORES SIN LABERINTO</h1>
+
+        </header>
+
+    <nav class="navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="layout.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="registro.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Entradas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"> Crear una nueva entrada <i class="bi bi-plus"></i></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Entradas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Registro</li>
+        </ol>
+    </nav>
+    
+    <div class="text-center">
+      <h3 class="text-center">REGISTRO</h3>
+
+    <form action="" class="text-center row g-3 needs-validation text-center">
+      <fieldset>
+        <div class="mb-3 ">
+          <label for="name" class="form-label"> <i class="bi bi-person"></i> Nombre*</label>
+          <input type="text" class="form-control" id="name" placeholder="Nombre">
+        </div>
+    
+        <div class="mb-3">
+          <label for="apellido" class="form-label"> <i class="bi bi-person-add"></i> Apellidos*</label>
+          <input type="text" class="form-control" id="name" placeholder="Apellidos">
+        </div>
+    
+        <div class="mb-3">
+          <label for="email" class="form-label"> <i class="bi bi-envelope"></i> Correo electrónico*</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+  
+        <div class="mb-3">
+          <label for="direccion" class="form-label"> <i class="bi bi-map"></i> Direccion</label>
+          <input type="text" class="form-control" id="direccion" placeholder="Direccion">
+        </div>
+  
+        <div class="mb-3">
+          <label for="CP" class="form-label"> <i class="bi bi-compass"></i> Codigo Postal</label>
+          <input type="number" class="form-control" id="CP" placeholder="XXXXX">
+        </div>
+  
+        <div class="mb-3">
+          <label for="Comunidad Autonoma" class="form-label"><i class="bi bi-map-fill"></i> Comunidad Autonoma</label>
+          <input type="text" class="form-control" id="CA" placeholder="Comunidad Autonoma">
+        </div>
+  
+        <div class="mb-3">
+          <label for="Provincia" class="form-label"><i class="bi bi-signpost"></i> Provincia</label>
+          <input type="text" class="form-control" id="Provincia" placeholder="Provincia">
+        </div>
+  
+        <div class="mb-3">
+          <label for="Ciudad" class="form-label"><i class="bi bi-signpost-fill"></i> Ciudad</label>
+          <input type="text" class="form-control" id="Ciudad" placeholder="Ciudad">
+        </div>
+  
+        <div class="mb-3">
+          <label for="biografia" class="form-label"> <i class="bi bi-award"></i> Pequeña biografia</label>
+          <textarea class="form-control" id="BG" rows="3"></textarea>
+        </div>
+  
+        <div class="input-group">
+          <span class="input-group-text" id="IG">https://instagram.com/</span>
+          <input type="text" class="form-control" id="IG" aria-describedby="IG">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+      </fieldset>
+
+    </form>
+    </div>
+
+    <footer class="col-12" id="footer">
+        <div class="col">
+            <p style="color: white; font-size: 25px;">Nos encontramos en: Av. de la Unidad, 5, 41950 Castilleja de la Cuesta, Sevilla</p>
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" href="#">Registro</a>
+                <a class="nav-link disabled">Login</a>
+                <a class="nav-link disabled">Entradas</a>
+              
+        </div>
+        <div class="col d-flex justify-content-end">
+            <img src="img/CC.png" id="" width="200px" alt="derechos de autor">
+        </div>
+    </footer>
+    
+</div>
+
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Inicio de sesion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"> <i class="bi bi-person"></i> Usuario</label>
+            <input type="text" class="form-control" id="User" placeholder="Usuario">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"> <i class="bi bi-pass"></i> Contraseña</label>
+            <input type="password" class="form-control" id="contra">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              No cerrar sesion
+            </label>
+          </div>
+          <a href="https://getbootstrap.esdocu.com/docs/5.1/getting-started/introduction/">¿No recuerdas tu contraseña?</a>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+
+#header {
+
+    background-color: rgb(197, 176, 151);
+
+}
+
+#logo{
+    height: 120px;
+    width: auto;
+    margin: auto;
+}
+
+
+#columnas{
+    display: flex;
+}
+
+#noticia{
+    border: solid black 1px;
+    margin: 3px;
+}
+
+#footer{
+    background-color: rgb(46, 63, 78);
+}
+
+#video{
+    position: relative;
+}
+
+ @media (min-width:376px) and (max-width:666px) and (orientation: portrait) {
+    body{
+        grid-template-rows: 15% 10% 680px 680px 10%;
+    }
+
+    #article{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #div{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    #footer{
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+ }
+
+ #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  #animation {
+    width: 400px;
+    height: 100px;
+    font-size: 40px;
+    font: bolder;
+    text-shadow: -2px -2px 1px rgb(255, 255, 255), 2px 2px 1px rgb(255, 255, 255), -2px 2px 1px rgb(255, 255, 255), 2px -2px 1px rgb(0, 0, 0);
+    position: fixed;
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-iteration-count: 5s;
+  }
+
+  @keyframes texto {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+  }
