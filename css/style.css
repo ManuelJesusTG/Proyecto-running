@@ -29,6 +29,9 @@
     position: relative;
     z-index: 1000;
 }
+#footer-btn{
+    color: aliceblue;
+}
 
  @media (min-width:376px) and (max-width:666px) and (orientation: portrait) {
     body{
