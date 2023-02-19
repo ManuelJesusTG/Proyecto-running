@@ -24,10 +24,10 @@
 
       <div class="content" id="content">
         <button class="btn-close" id="myBtn" onclick="DeleteVideo()">❌</button>
-        <button id="IniciarPausar">
+        <button for="Pausar" id="IniciarPausar">
           ▶️
         </button>
-        <input type="range" id="Velocidad" value="0">
+        <input for="Control de velocidad" type="range" id="Velocidad" value="0">
       </div>
 
       <div id="animation">¡Haz ejercicio y diviertete!</div>
@@ -76,8 +76,8 @@
 
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">
-                    <i class="bi bi-search">Buscar</i>
+                <button id="Buscar" class="btn btn-outline-success" type="submit">
+                    <i id="Buscar" class="bi bi-search"></i>
                 </button>
             </form>
           </div>
