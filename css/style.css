@@ -29,9 +29,6 @@
     position: relative;
     z-index: 1000;
 }
-#footer-btn{
-    color: aliceblue;
-}
 
 .container-btn-mode{
     position: absolute;
