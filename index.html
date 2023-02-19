@@ -77,41 +77,63 @@
     </nav>
     
     <div id="columnas">
-        <div class="col-8">
-            <div class="col" id="noticia">
-                <section id="s1"> <b>Noticia 1</b> <br> <img class="align-content-center" width="200px" src="img/s1.jfif">
+        <div class="col-8 row justify-content-around row-cols-md-3 g-1 ms-auto">
+            <div class="col card text-center" id="noticia">
+                <section id="s1"> <b>Noticia 1</b> <br> <img class="align-content-center" width="80%" src="img/s1.jfif">
+
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo, soluta rerum molestiae culpa officiis beatae quisquam tenetur adipisci rem esse doloremque veniam impedit quae deleniti, ad fuga incidunt.</p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo, soluta reru <br>
                     - Paulo
                     </section>
+
+                    <div class="stats row justify-content-end">
+                      <p><i class="bi bi-eye"></i>400</p>
+                      <p><i class="bi bi-heart"></i>190</p>
+                    </div>
+
             </div>
-            <div class="col" id="noticia">
+            <div class="col card text-center" id="noticia">
                 <section id="s2"> <b>Noticia 2</b> <br>
-                
-                    <img width="200px" src="img/Copyright1.jpg" alt="Maratón de atletismo, Por Pavel1964" >
+                    <img width="80%" src="img/Copyright1.jpg" alt="Maratón de atletismo, Por Pavel1964" >
                     <figcaption>Maratón de atletismo, Por Pavel1964</figcaption>
                     <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo, soluta reru <br>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae totam est necessitatibus repellat id veniam incidunt. Nobis quam vel nostrum veritatis <br>
                     - Antonio
+
+                    <div class="stats row justify-content-end">
+                      <p><i class="bi bi-eye"></i>400</p>
+                      <p><i class="bi bi-heart"></i>190</p>
+                    </div>
                     
                 </section>
             </div>
-            <div class="col" id="noticia">
+            <div class="col card text-center" id="noticia">
                 <section id="s2"> <b>Noticia 3</b> <br>
                 
-                    <img width="200px" src="img/s3.jfif" > <br>
+                    <img width="80%" src="img/s3.jfif" > <br>
 
                     <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo, soluta reru <br>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae totam est necessitatibus repellat id veniam incidunt. Nobis quam vel nostrum veritatis <br>
                     - Juan
+
+                    <div class="stats row justify-content-end">
+                      <p><i class="bi bi-eye"></i>400</p>
+                      <p><i class="bi bi-heart"></i>190</p>
+                    </div>
                     
                 </section>
             </div>
-            <div class="col" id="noticia">
+            <div class="col card text-center" id="noticia">
                 <section id="s2"> <b>Noticia 4</b> <br>
                 
-                    <img width="200px" src="img/Copyleft1.jpg" > <br>
+                    <img width="80%" src="img/Copyleft1.jpg" > <br>
 
                     <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo, soluta reru <br>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae totam est necessitatibus repellat id veniam incidunt. Nobis quam vel nostrum veritatis <br>
                     - Alberto
+
+
+                    <div class="stats row justify-content-end">
+                      <p><i class="bi bi-eye"></i>400</p>
+                      <p><i class="bi bi-heart"></i>190</p>
+                    </div>
                     
                 </section>
             </div>
@@ -175,17 +197,19 @@
     </div>
     </div>
 
-    <footer class="col-12" id="footer">
-        <div class="col">
-            <p style="color: white; font-size: 25px;">Nos encontramos en: Av. de la Unidad, 5, 41950 Castilleja de la Cuesta, Sevilla</p>
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                <a class="nav-link active" href="#">Registro</a>
-                <a class="nav-link disabled">Login</a>
-                <a class="nav-link disabled">Entradas</a>
-              
+    <footer class="col-12 row" id="footer">
+        <div class="col-4">
+            <p style="color: white; font-size: 25px;">Nos encontramos en:</p>
+            <p style="color: white; font-size: 25px;"> Av. de la Unidad, 5, 41950 Castilleja de la Cuesta, Sevilla</p>
         </div>
-        <div class="col d-flex justify-content-end">
-            <img src="img/CC.png" id="" width="200px" alt="derechos de autor">
+        <div class="col-4">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" href="#">Registro</a>
+                <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#modal">Login</a>
+                <a class="nav-link disabled">Entradas</a>
+        </div>
+        <div class="col-4 text-center">
+            <img src="img/CC.png" id="" width="70%" alt="derechos de autor">
         </div>
     </footer>
     

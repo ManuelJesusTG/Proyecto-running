@@ -64,11 +64,10 @@
         </ol>
     </nav>
     
-    <div class="text-center">
+    <div class="justify-content-center col-12">
       <h3 class="text-center">REGISTRO</h3>
-
-    <form action="" class="text-center row g-3 needs-validation text-center" >
-      <fieldset style="width: fit-content;">
+    <form action="" class="row g-3 needs-validation col-6 offset-md-3" >
+      <fieldset class="text-center align-content-center">
         <div class="mb-3 ">
           <label for="name" class="form-label"> <i class="bi bi-person"></i> Nombre*</label>
           <input type="text" class="form-control" id="name" placeholder="Nombre">
@@ -127,19 +126,21 @@
     </form>
     </div>
 
-    <footer class="col-12" id="footer">
-        <div class="col">
-            <p style="color: white; font-size: 25px;">Nos encontramos en: Av. de la Unidad, 5, 41950 Castilleja de la Cuesta, Sevilla</p>
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                <a class="nav-link active" href="#">Registro</a>
-                <a class="nav-link disabled">Login</a>
-                <a class="nav-link disabled">Entradas</a>
-              
-        </div>
-        <div class="col d-flex justify-content-end">
-            <img src="img/CC.png" id="" width="200px" alt="derechos de autor">
-        </div>
-    </footer>
+    <footer class="col-12 row" id="footer">
+      <div class="col-4">
+          <p style="color: white; font-size: 25px;">Nos encontramos en:</p>
+          <p style="color: white; font-size: 25px;"> Av. de la Unidad, 5, 41950 Castilleja de la Cuesta, Sevilla</p>
+      </div>
+      <div class="col-4">
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" href="#">Registro</a>
+              <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#modal">Login</a>
+              <a class="nav-link disabled">Entradas</a>
+      </div>
+      <div class="col-4 text-center">
+          <img src="img/CC.png" id="" width="70%" alt="derechos de autor">
+      </div>
+  </footer>
     
 </div>
 
