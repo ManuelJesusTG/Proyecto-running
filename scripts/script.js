@@ -4,6 +4,8 @@ window.onload = function(){
     var Velocidad = document.getElementById("Velocidad")
 
 
+
+    // el video consta de 3 imagenes, con githubpages hay veces que tarda en cargar y no funciona correctamente
 IniciarPausar.addEventListener("click", function(){
     if(video.paused){
         video.play();
