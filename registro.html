@@ -46,16 +46,6 @@
               <a class="nav-link active" aria-label="Crear una nueva entrada"> Crear una nueva entrada <i class="bi bi-plus"></i></a>
             </li>
           </ul>
-          
-          <div class="container-btn-mode" aria-label="Cambiador de contraste">
-            <div id="id-sun" class="btn-mode sun active">
-               <i class="fas fa-sun"></i>
-            </div>
-            <div id="id-moon" class="btn-mode moon">
-               <i class="fas fa-moon"></i>
-            </div>
-         </div>
-
 
           <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
@@ -78,7 +68,7 @@
     
     <div class="justify-content-center col-12" aria-label="Formulario de registro">
       <h2 class="text-center">REGISTRO</h2>
-    <form action="" class="row g-3 needs-validation col-6 offset-md-3" >
+    <form action="onsubmit()" class="row g-3 needs-validation col-6 offset-md-3" >
       <fieldset class="text-center align-content-center">
         <div class="mb-3 " aria-label="Introduce tu nombre">
           <label for="name" class="form-label"> <i class="bi bi-person"></i> Nombre*</label>
@@ -87,7 +77,7 @@
     
         <div class="mb-3" aria-label="Introduce tus apellidos">
           <label for="apellido" class="form-label"> <i class="bi bi-person-add"></i> Apellidos*</label>
-          <input type="text" class="form-control" id="Apellidos" placeholder="Apellidos" >
+          <input type="text" class="form-control" id="apellido" placeholder="Apellidos" >
         </div>
     
         <div class="mb-3" aria-label="Introduce tu correo electrónico">
@@ -106,8 +96,8 @@
         </div>
   
         <div class="mb-3" aria-label="Introduce tu comunidad autónoma">
-          <label for="Comunidad Autonoma" class="form-label"><i class="bi bi-map-fill"></i> Comunidad Autonoma</label>
-          <input type="text" class="form-control" id="CA" placeholder="Comunidad Autonoma" aria-label="Modificar comunidad autónoma">
+          <label for="Comunidad_Autonoma" class="form-label"><i class="bi bi-map-fill"></i> Comunidad Autonoma</label>
+          <input type="text" class="form-control" id="Comunidad_Autonoma" placeholder="Comunidad Autonoma" aria-label="Modificar comunidad autónoma">
         </div>
   
         <div class="mb-3" aria-label="Introduce tu provincia">
@@ -122,7 +112,7 @@
   
         <div class="mb-3" aria-label="Introduce una pequeña biografia sobre ti">
           <label for="biografia" class="form-label"> <i class="bi bi-award"></i> Pequeña biografia</label>
-          <textarea aria-label="pequeña biografia" class="form-control" id="BG" rows="3" ></textarea>
+          <textarea aria-label="pequeña biografia" class="form-control" id="biografia" rows="3" ></textarea>
         </div>
   
         <div class="input-group">
@@ -167,10 +157,10 @@
 
         <div class="mb-3" aria-label="Introduce aqui tu usuario">
           <label for="Usuario" class="form-label"> <i class="bi bi-person"></i> Usuario</label>
-          <input type="text" class="form-control" id="User" placeholder="Usuario" aria-label="Edicion de nombre de usuario">
+          <input type="text" class="form-control" id="Usuario" placeholder="Usuario" aria-label="Edicion de nombre de usuario">
         </div>
         <div class="mb-3" aria-label="Introduce aqui tu contraseña">
-          <label for="Contraseña" aria-label="Introduce aqui tu contraseña" class="form-label"> <i class="bi bi-pass"></i> Contraseña</label>
+          <label for="contra" aria-label="Introduce aqui tu contraseña" class="form-label"> <i class="bi bi-pass"></i> Contraseña</label>
           <input type="password" class="form-control" id="contra" aria-label="Edicion de contraseña">
         </div>
         <div class="form-check">
