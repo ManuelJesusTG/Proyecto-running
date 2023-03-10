@@ -17,121 +17,121 @@
 </head>
 <body>
     
-<div class="col-12">
+  <div class="col-12">
 
-      <header class="col-12" id="header">
+    <header class="col-12" id="header" aria-label="Cabecera de la pagina">
 
-            <img alt="Logo de la pagina" src="img/Logo.svg" id="logo" class="d-flex justify-content-start"/>
-            <h1 id="Titulo" class="d-flex justify-content-center">CORREDORES SIN LABERINTO</h1>
+          <img alt="Logo de la pagina" src="img/Logo.svg" id="logo" class="d-flex justify-content-start"/>
+          <h1 id="Titulo" class="d-flex justify-content-center">CORREDORES SIN LABERINTO</h1>
 
-        </header>
+      </header>
 
-        <nav class="navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="registro.html">Registro</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#modal">Login</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Entradas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled"> Crear una nueva entrada <i class="bi bi-plus"></i></a>
-                </li>
-              </ul>
-              
-              <div class="container-btn-mode">
-                <div id="id-sun" class="btn-mode sun active">
-                   <i class="fas fa-sun"></i>
-                </div>
-                <div id="id-moon" class="btn-mode moon">
-                   <i class="fas fa-moon"></i>
-                </div>
-             </div>
-  
-  
-              <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                  <button class="btn btn-outline-success" type="submit">
-                      <i class="bi bi-search"></i>
-                  </button>
-              </form>
+  <nav class="navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" aria-label="Barra de navegacion">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" aria-label="Navegacion">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" aria-label="Acceder al inicio del sitio web">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="registro.html" aria-label="Acceder a registro">Registro</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#modal" aria-label="Acceder al login">Login</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link active" aria-label="Acceder a las entradas">Entradas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-label="Crear una nueva entrada"> Crear una nueva entrada <i class="bi bi-plus"></i></a>
+            </li>
+          </ul>
+          
+          <div class="container-btn-mode" aria-label="Cambiador de contraste">
+            <div id="id-sun" class="btn-mode sun active" aria-label="modo dia">
+               <i class="fas fa-sun"></i>
             </div>
-          </div>
-        </nav>
+            <div id="id-moon" class="btn-mode moon" aria-label="modo nocturno">
+               <i class="fas fa-moon"></i>
+            </div>
+         </div>
+
+
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+              <button aria-label="Realizar busqueda" id="Buscar" class="btn btn-outline-success" type="submit">
+                  <i class="bi bi-search"></i>
+              </button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
       <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
         aria-label="breadcrumb">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb" aria-label="Localizacion del sitio web">
             <li class="breadcrumb-item"><a href="#">Inicio</a></li>
             <li class="breadcrumb-item"><a href="index.html">Entradas</a></li>
             <li class="breadcrumb-item active" aria-current="page">Registro</li>
         </ol>
     </nav>
     
-    <div class="justify-content-center col-12">
+    <div class="justify-content-center col-12" aria-label="Formulario de registro">
       <h2 class="text-center">REGISTRO</h2>
     <form action="" class="row g-3 needs-validation col-6 offset-md-3" >
       <fieldset class="text-center align-content-center">
-        <div class="mb-3 ">
+        <div class="mb-3 " aria-label="Introduce tu nombre">
           <label for="name" class="form-label"> <i class="bi bi-person"></i> Nombre*</label>
-          <input type="text" class="form-control" id="name" placeholder="Nombre">
+          <input type="text" class="form-control" id="name" placeholder="Nombre" aria-label="Modificar nombre">
         </div>
     
-        <div class="mb-3">
+        <div class="mb-3" aria-label="Introduce tus apellidos">
           <label for="apellido" class="form-label"> <i class="bi bi-person-add"></i> Apellidos*</label>
-          <input type="text" class="form-control" id="Apellidos" placeholder="Apellidos">
+          <input type="text" class="form-control" id="Apellidos" placeholder="Apellidos" >
         </div>
     
-        <div class="mb-3">
+        <div class="mb-3" aria-label="Introduce tu correo electrónico">
           <label for="email" class="form-label"> <i class="bi bi-envelope"></i> Correo electrónico*</label>
-          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" aria-label="Modificar correo electrónico">
         </div>
   
-        <div class="mb-3">
+        <div class="mb-3" aria-label="Introduce tu direccion">
           <label for="direccion" class="form-label"> <i class="bi bi-map"></i> Direccion</label>
-          <input type="text" class="form-control" id="direccion" placeholder="Direccion">
+          <input type="text" class="form-control" id="direccion" placeholder="Direccion" aria-label="Modificar Direccion">
         </div>
   
-        <div class="mb-3">
+        <div class="mb-3" aria-label="Introduce tu codigo postal">
           <label for="CP" class="form-label"> <i class="bi bi-compass"></i> Codigo Postal</label>
-          <input type="number" class="form-control" id="CP" placeholder="XXXXX">
+          <input type="number" class="form-control" id="CP" placeholder="Codigo postal" aria-label="Modificar Codigo postal">
         </div>
   
-        <div class="mb-3">
+        <div class="mb-3" aria-label="Introduce tu comunidad autónoma">
           <label for="Comunidad Autonoma" class="form-label"><i class="bi bi-map-fill"></i> Comunidad Autonoma</label>
-          <input type="text" class="form-control" id="CA" placeholder="Comunidad Autonoma">
+          <input type="text" class="form-control" id="CA" placeholder="Comunidad Autonoma" aria-label="Modificar comunidad autónoma">
         </div>
   
-        <div class="mb-3">
+        <div class="mb-3" aria-label="Introduce tu provincia">
           <label for="Provincia" class="form-label"><i class="bi bi-signpost"></i> Provincia</label>
-          <input type="text" class="form-control" id="Provincia" placeholder="Provincia">
+          <input type="text" class="form-control" id="Provincia" placeholder="Provincia" aria-label="Modificar provincia">
         </div>
   
-        <div class="mb-3">
+        <div class="mb-3" aria-label="Introduce tu ciudad">
           <label for="Ciudad" class="form-label"><i class="bi bi-signpost-fill"></i> Ciudad</label>
-          <input type="text" class="form-control" id="Ciudad" placeholder="Ciudad">
+          <input type="text" class="form-control" id="Ciudad" placeholder="Ciudad" aria-label="Modificar ciudad">
         </div>
   
-        <div class="mb-3">
+        <div class="mb-3" aria-label="Introduce una pequeña biografia sobre ti">
           <label for="biografia" class="form-label"> <i class="bi bi-award"></i> Pequeña biografia</label>
-          <textarea aria-label="pequeña biografia" class="form-control" id="BG" rows="3"></textarea>
+          <textarea aria-label="pequeña biografia" class="form-control" id="BG" rows="3" ></textarea>
         </div>
   
         <div class="input-group">
-          <span class="input-group-text" id="Instagram">https://instagram.com/</span>
-          <input type="text" class="form-control" id="IG" aria-describedby="IG" aria-label="Instagram">
+          <span class="input-group-text" id="Instagram" aria-label="web de instagram">https://instagram.com/</span>
+          <input type="text" class="form-control" id="IG" aria-describedby="IG" aria-label="Introduce tu cuenta de instagram">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">Enviar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cancelar envio de registro">Cancelar</button>
+        <button type="button" class="btn btn-primary" aria-label="enviar registro">Enviar</button>
       </div>
       </fieldset>
 
@@ -157,38 +157,38 @@
 </div>
 
 <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Inicio de sesion</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Inicio de sesion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar login"></button>
+      </div>
+      <div class="modal-body">
 
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"> <i class="bi bi-person"></i> Usuario</label>
-            <input type="text" class="form-control" id="User" placeholder="Usuario">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"> <i class="bi bi-pass"></i> Contraseña</label>
-            <input type="password" class="form-control" id="contra">
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              No cerrar sesion
-            </label>
-          </div>
-          <a href="https://getbootstrap.esdocu.com/docs/5.1/getting-started/introduction/">¿No recuerdas tu contraseña?</a>
+        <div class="mb-3" aria-label="Introduce aqui tu usuario">
+          <label for="Usuario" class="form-label"> <i class="bi bi-person"></i> Usuario</label>
+          <input type="text" class="form-control" id="User" placeholder="Usuario" aria-label="Edicion de nombre de usuario">
+        </div>
+        <div class="mb-3" aria-label="Introduce aqui tu contraseña">
+          <label for="Contraseña" aria-label="Introduce aqui tu contraseña" class="form-label"> <i class="bi bi-pass"></i> Contraseña</label>
+          <input type="password" class="form-control" id="contra" aria-label="Edicion de contraseña">
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault" aria-label="No cerrar tu sesion">
+            No cerrar sesion
+          </label>
+        </div>
+        <a href="https://getbootstrap.esdocu.com/docs/5.1/getting-started/introduction/" aria-label="Enlace para recuperar tu contraseña">¿No recuerdas tu contraseña?</a>
 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Login</button>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cerrar login">Cerrar</button>
+        <button type="button" class="btn btn-primary" aria-label="Acceder a tu cuenta">Login</button>
       </div>
     </div>
   </div>
+</div>
     
 </body>
 </html>
