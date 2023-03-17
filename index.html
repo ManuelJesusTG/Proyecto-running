@@ -18,16 +18,12 @@
 <body>
 
     <div id="video">
-    <video autoplay muted loop id="myVideo" aria-label="Video de presentacion de la web">
+    <video autoplay muted loop id="myVideo" aria-label="Video de presentacion de la web" controls>
         <source src="vid/VBG.mp4" type="video/mp4">
       </video>
 
       <div class="content" id="content" aria-label="Barra de navegacion del video">
         <button class="btn-close" id="myBtn" onclick="DeleteVideo()" aria-label="Cerrar video"></button>
-        <button aria-label="Pausar o reanudar" id="IniciarPausar">
-          ⏸️
-        </button>
-        <input aria-label="Control del video" type="range" id="Velocidad" value="0">
       </div>
 
       <div id="animation" aria-label="Eslogan de la web">¡Haz ejercicio y diviertete!</div>

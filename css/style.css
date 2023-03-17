@@ -8,6 +8,16 @@ img{
 
 }
 
+#content{
+
+  position: fixed;
+
+  top: 0px;
+  width: 60px;
+  right: 10px;
+
+}
+
 #logo{
     height: 120px;
     width: auto;
