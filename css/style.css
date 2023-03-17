@@ -2,12 +2,6 @@ img{
   width: 80%;
 }
 
-#header {
-
-    background-color: rgb(197, 176, 151);
-
-}
-
 #content{
 
   position: fixed;
@@ -38,6 +32,31 @@ img{
     z-index: 1000;
 }
 
+#lightSwitch {
+  transform: scale(1.6);
+}
+
+
+#header {
+
+  background-color: rgb(197, 176, 151);
+
+}
+
+#darkheader{
+
+  background-color: #212121;
+  color: white;
+
+}
+
+#dark{
+
+  background-color: #363636;
+  color: white;
+
+}
+
 
   @media (min-width:376px) and (max-width:666px) and (orientation: portrait) {
     body{
@@ -61,9 +80,6 @@ img{
     }
   }
 
-  #lightSwitch {
-    transform: scale(1.6);
-  }
 
   #myVideo {
     position: fixed;
