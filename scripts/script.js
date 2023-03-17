@@ -9,3 +9,6 @@ function DeleteVideo(){
     video.remove();
     div.remove();
 }
+
+// Modo oscuro y modo Claro
+
