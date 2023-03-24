@@ -12,13 +12,16 @@ function ModoOscuro(){
 
 if (boton.checked == false){
 
-    console.log("desactivado")
+    console.log("Modo oscuro desactivado")
 
     document.getElementById("darkheader").id = "header"
     document.getElementById("nav").className= "navbar-expand-lg navbar-light bg-light"
     document.getElementById("login").className = "modal-content"
     for (let i = 0; i < document.getElementsByTagName("a").length; i++) {
         document.getElementsByTagName("a")[i].id="linkN"
+    }
+    for (let i = 0; i < document.getElementsByClassName("nav-link active").length; i++) {
+        document.getElementsByClassName("nav-link active")[i].id="Negro"
     }
     document.getElementById("dark").id = "body"
     document.getElementById("noticia1").className = "col card text-center m-4"
@@ -28,7 +31,7 @@ if (boton.checked == false){
 
 } else {
 
-    console.log("activado")
+    console.log("Modo oscuro activado")
 
     document.getElementById("header").id = "darkheader"
     document.getElementById("nav").className = "navbar-expand-lg navbar-dark bg-dark"
