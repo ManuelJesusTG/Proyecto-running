@@ -4,11 +4,11 @@ window.onload = Comenzar;
 
 function Comenzar() {
 
-    document.getElementById("lightSwitch").addEventListener("click",ModoOscuro)
+    document.getElementById("Modo_Oscuro").addEventListener("click",ModoOscuro)
 }
 
 function ModoOscuro(){
-    let boton = document.getElementById("lightSwitch");
+    let boton = document.getElementById("Modo_Oscuro");
 
 if (boton.checked == false){
 
@@ -33,7 +33,7 @@ if (boton.checked == false){
     document.getElementById("noticia2").className = "col card text-center m-4 bg-dark"
     document.getElementById("noticia3").className = "col card text-center m-4 bg-dark"
     document.getElementById("noticia4").className = "col card text-center m-4 bg-dark"
-    
+
 }
 }
 
