@@ -17,7 +17,10 @@ if (boton.checked == false){
     document.getElementById("darkheader").id = "header"
     document.getElementById("nav").className= "navbar-expand-lg navbar-light bg-light"
     document.getElementById("dark").id = "body"
-    document.getElementsByClassName("col card text-center m-4").id = "hola"
+    document.getElementById("noticia1").className = "col card text-center m-4"
+    document.getElementById("noticia2").className = "col card text-center m-4"
+    document.getElementById("noticia3").className = "col card text-center m-4"
+    document.getElementById("noticia4").className = "col card text-center m-4"
 
 } else {
 
@@ -26,7 +29,11 @@ if (boton.checked == false){
     document.getElementById("header").id = "darkheader"
     document.getElementById("nav").className = "navbar-expand-lg navbar-dark bg-dark"
     document.getElementById("body").id = "dark"
-    document.getElementsByClassName("col card text-center m-4").id = "hola"
+    document.getElementById("noticia1").className = "col card text-center m-4 bg-dark"
+    document.getElementById("noticia2").className = "col card text-center m-4 bg-dark"
+    document.getElementById("noticia3").className = "col card text-center m-4 bg-dark"
+    document.getElementById("noticia4").className = "col card text-center m-4 bg-dark"
+    
 }
 }
 
