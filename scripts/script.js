@@ -16,11 +16,11 @@ if (boton.checked == false){
 
     document.getElementById("darkheader").id = "header"
     document.getElementById("nav").className= "navbar-expand-lg navbar-light bg-light"
-    document.getElementById("dark").id = "body"
     document.getElementById("login").className = "modal-content"
     for (let i = 0; i < document.getElementsByTagName("a").length; i++) {
         document.getElementsByTagName("a")[i].id="linkN"
     }
+    document.getElementById("dark").id = "body"
     document.getElementById("noticia1").className = "col card text-center m-4"
     document.getElementById("noticia2").className = "col card text-center m-4"
     document.getElementById("noticia3").className = "col card text-center m-4"
