@@ -57,6 +57,14 @@ img{
 
 }
 
+#linkO{
+  color: aquamarine;
+}
+
+#linkN{
+  color: #0d6efd;;
+}
+
 
   @media (min-width:376px) and (max-width:666px) and (orientation: portrait) {
     body{
