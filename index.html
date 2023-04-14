@@ -30,7 +30,7 @@
         <button class="btn-close" id="myBtn" onclick="DeleteVideo()" aria-label="Cerrar video"></button>
       </div>
 
-      <div id="animation" aria-label="Eslogan de la web">¡Haz ejercicio y diviertete!</div>
+      <div id="animation">¡Haz ejercicio y diviertete!</div>
 
     </div>
     
@@ -104,7 +104,7 @@
     </nav>
     
     <div id="columnas">
-        <div class="col-8 row justify-content-around row-cols-md-3 g-1 ms-auto" aria-label="Entradas principales de la web">
+        <div class="col-8 row justify-content-around row-cols-md-3 g-1 ms-auto" role="navigation">
             <div class="col card text-center m-4" id="noticia1">
                 <section> <h2>Noticia 1</h2> <br> <img class="align-content-center" src="img/n1.jfif" alt="Imagen de personas corriendo">
 
@@ -248,13 +248,13 @@
           <h5 class="modal-title" id="exampleModalLabel">Inicio de sesion</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar login"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" role="form">
 
-          <div class="mb-3" aria-label="Introduce aqui tu usuario">
+          <div class="mb-3">
             <label for="Usuario" class="form-label"> <i class="bi bi-person"></i> Usuario</label>
             <input type="text" class="form-control" id="Usuario" placeholder="Usuario" aria-label="Edicion de nombre de usuario">
           </div>
-          <div class="mb-3" aria-label="Introduce aqui tu contraseña">
+          <div class="mb-3">
             <label for="contra" aria-label="Introduce aqui tu contraseña" class="form-label"> <i class="bi bi-pass"></i> Contraseña</label>
             <input type="password" class="form-control" id="contra" aria-label="Edicion de contraseña">
           </div>
