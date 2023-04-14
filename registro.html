@@ -28,8 +28,8 @@
 
   <nav class="navbar-expand-lg navbar-light bg-light" id="nav">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" aria-label="Barra de navegacion">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" aria-label="Navegacion">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" role="menubar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html" aria-label="Acceder al inicio del sitio web">Inicio</a>
             </li>
@@ -86,15 +86,15 @@
         </ol>
     </nav>
     
-    <div class="justify-content-center col-12" aria-label="Formulario de registro">
+    <div class="justify-content-center col-12" role="form">
       
       <h2 class="text-center">REGISTRO</h2>
 
     <form action="onsubmit()" class="row g-3 needs-validation col-6 offset-md-3" >
       <fieldset class="text-center align-content-center">
 
-        <div class="form-group row" aria-label="Introduce tu nombre">
-          <label for="name" class="col-sm-2 col-form-label"> <i class="bi bi-person"></i> Nombre*</label>
+        <div class="form-group row">
+          <label for="name" class="col-sm-2 col-form-label"> <i class="bi bi-person"></i> Nombre</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" id="name" placeholder="Nombre" aria-label="Modificar nombre">
           </div>
@@ -102,8 +102,8 @@
 
         <br>
 
-        <div class="form-group row" aria-label="Introduce tus apellidos">
-          <label for="apellido" class="col-sm-2 col-form-label"> <i class="bi bi-person-add"></i> Apellidos*</label>
+        <div class="form-group row">
+          <label for="apellido" class="col-sm-2 col-form-label"> <i class="bi bi-person-add"></i> Apellidos</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" id="apellido" placeholder="Apellidos" aria-label="Modificar Apellidos">
           </div>
@@ -111,16 +111,16 @@
 
         <br>
 
-        <div class="form-group row" aria-label="Introduce tu correo electrónico">
-          <label for="email" class="col-sm-2 col-form-label"> <i class="bi bi-envelope"></i> Correo electrónico*</label>
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 col-form-label"> <i class="bi bi-envelope"></i> Correo electrónico</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" placeholder="name@example.com" aria-label="Modificar correo electrónico">
+            <input type="email" class="form-control" id="email" placeholder="Correo electronico" aria-label="Modificar correo electrónico">
           </div>
         </div>
 
         <br>
 
-        <div class="form-group row" aria-label="Introduce tu direccion">
+        <div class="form-group row">
           <label for="direccion" class="col-sm-2 col-form-label"> <i class="bi bi-map"></i> Direccion</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" id="direccion" placeholder="Direccion" aria-label="Modificar Direccion">
@@ -129,7 +129,7 @@
 
         <br>
 
-        <div class="form-group row" aria-label="Introduce tu codigo postal">
+        <div class="form-group row">
           <label for="CP" class="col-sm-2 col-form-label"> <i class="bi bi-compass"></i> Codigo Postal</label>
           <div class="col-sm-10">
             <input type="number" class="form-control" id="CP" placeholder="Codigo postal" aria-label="Modificar Codigo postal">
@@ -138,7 +138,7 @@
 
         <br>
 
-        <div class="form-group row" aria-label="Introduce tu comunidad autónoma">
+        <div class="form-group row">
           <label for="Comunidad_Autonoma" class="col-sm-2 col-form-label"> <i class="bi bi-map-fill"></i> Comunidad Autonoma</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" id="Comunidad_Autonoma" placeholder="Comunidad Autonoma" aria-label="Modificar comunidad autónoma">
@@ -147,7 +147,7 @@
 
         <br>
 
-        <div class="form-group row" aria-label="Introduce tu provincia">
+        <div class="form-group row">
           <label for="Provincia" class="col-sm-2 col-form-label"><i class="bi bi-signpost"></i> Provincia</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" id="Provincia" placeholder="Provincia" aria-label="Modificar provincia">
@@ -156,7 +156,7 @@
 
         <br>
 
-        <div class="form-group row" aria-label="Introduce tu ciudad">
+        <div class="form-group row">
           <label for="Ciudad" class="col-sm-2 col-form-label"><i class="bi bi-signpost-fill"></i> Ciudad</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" id="Ciudad" placeholder="Ciudad" aria-label="Modificar ciudad">
@@ -165,7 +165,7 @@
 
         <br>
   
-        <div class="form-group row" aria-label="Introduce una pequeña biografia sobre ti">
+        <div class="form-group row">
           <label for="biografia" class="col-sm-2 col-form-label"> <i class="bi bi-award"></i> Pequeña biografia</label>
           <div class="col-sm-10">
             <textarea aria-label="pequeña biografia" class="form-control" id="biografia" rows="3" ></textarea>
@@ -175,8 +175,8 @@
         <br>
   
         <div class="input-group">
-          <span class="input-group-text" id="Instagram" aria-label="web de instagram">https://instagram.com/</span>
-          <input type="text" class="form-control" id="IG" aria-describedby="IG" aria-label="Introduce tu cuenta de instagram">
+          <span class="input-group-text" id="Instagram">https://instagram.com/</span>
+          <input type="text" class="form-control" id="IG" aria-describedby="Instagram" aria-label="Introduce tu cuenta de instagram">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cancelar envio de registro">Cancelar</button>
@@ -214,11 +214,11 @@
       </div>
       <div class="modal-body">
 
-        <div class="mb-3" aria-label="Introduce aqui tu usuario">
+        <div class="mb-3">
           <label for="Usuario" class="form-label"> <i class="bi bi-person"></i> Usuario</label>
           <input type="text" class="form-control" id="Usuario" placeholder="Usuario" aria-label="Edicion de nombre de usuario">
         </div>
-        <div class="mb-3" aria-label="Introduce aqui tu contraseña">
+        <div class="mb-3">
           <label for="contra" aria-label="Introduce aqui tu contraseña" class="form-label"> <i class="bi bi-pass"></i> Contraseña</label>
           <input type="password" class="form-control" id="contra" aria-label="Edicion de contraseña">
         </div>
